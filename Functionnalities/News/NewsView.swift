@@ -32,7 +32,9 @@ extension NewsListView {
           print(error)
         } else {
           if let freshNews = freshNews {
-            self.news.append(contentsOf: freshNews)
+            DispatchQueue.main.async {
+              self.news.append(contentsOf: freshNews)
+            }
           }
         }
       }
@@ -54,7 +56,6 @@ struct NewsListView: View {
             viewModel.loadNews()
           }
         }
-
       } else {
         List(viewModel.news) { new in
           Text(new.title!)

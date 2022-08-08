@@ -57,6 +57,7 @@
 		966BB06C28A125350069ECF6 /* APIService+News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+News.swift"; sourceTree = "<group>"; };
 		966BB06F28A128260069ECF6 /* NewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
 		966BB07528A134410069ECF6 /* NewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
+		966BB07728A13DF90069ECF6 /* PortfolioProject--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PortfolioProject--iOS--Info.plist"; sourceTree = "<group>"; };
 		96F66B54289D16A300345118 /* Text+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+DesignSystem.swift"; sourceTree = "<group>"; };
 		96F66B56289D170600345118 /* Button+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+DesignSystem.swift"; sourceTree = "<group>"; };
 		96F66B64289D7ED900345118 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		9663A59E289D130B00E6ED8E = {
 			isa = PBXGroup;
 			children = (
+				966BB07728A13DF90069ECF6 /* PortfolioProject--iOS--Info.plist */,
 				96F66B4A289D152300345118 /* App (Delegate) */,
 				96F66B49289D151300345118 /* Functionnalities */,
 				96F66B4B289D152F00345118 /* Singletons */,
@@ -518,6 +520,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PortfolioProject--iOS--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Test DEV";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -621,7 +624,8 @@
 				DEVELOPMENT_TEAM = M5GWR75AFZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Test PROD";
+				INFOPLIST_FILE = "PortfolioProject--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Test DEV";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -733,7 +737,8 @@
 				DEVELOPMENT_TEAM = M5GWR75AFZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Test INT";
+				INFOPLIST_FILE = "PortfolioProject--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Test DEV";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

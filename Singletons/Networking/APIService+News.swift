@@ -14,7 +14,6 @@ extension APIService {
     let newsEndpoint = EndpointCases.news
 
     Worker().baseRequest(endpoint: newsEndpoint) { (data, _, error) in
-
       if let error = error {
         if let dataSafe = data {
           print(String(data: dataSafe, encoding: .utf8))
@@ -28,7 +27,6 @@ extension APIService {
       } else {
         completion(nil, nil, AppError.fonctionalError(message: "Error with the data"))
       }
-
     }
   }
 }

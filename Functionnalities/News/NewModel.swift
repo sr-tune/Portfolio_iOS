@@ -16,7 +16,7 @@ struct Constants {
   static let contentKey = "content"
 }
 
-struct New: ImmutableMappable {
+struct New: ImmutableMappable, BaseMappable {
   let ident = UUID().uuidString
   let title: String?
   let desc: String?

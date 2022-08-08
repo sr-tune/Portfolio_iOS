@@ -102,11 +102,11 @@ class Worker {
     // HTTP Method
     urlRequest.httpMethod = endpoint.httpMethod
 
-    let dispatch = DispatchGroup()
+   // let dispatch = DispatchGroup()
 
-    dispatch.enter()
+  //  dispatch.enter()
 
-    dispatch.notify(queue: .main) {
+   // dispatch.notify(queue: .main) {
       // HTTP Headers
       endpoint.headers?.forEach({ header in
         urlRequest.setValue(header.value as? String, forHTTPHeaderField: header.key)
@@ -146,7 +146,7 @@ class Worker {
         }
       }
       task.resume()
-    }
+   // }
   }
 }
 
