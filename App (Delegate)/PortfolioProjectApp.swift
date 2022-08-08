@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct PortfolioProjectApp: App {
-    var body: some Scene {
-        WindowGroup {
-          NewsListView(viewModel: NewsListView.ViewModel())
-        }
+  var body: some Scene {
+    WindowGroup {
+      NewsListView(viewModel: NewsListView.ViewModel())
     }
+  }
 }
