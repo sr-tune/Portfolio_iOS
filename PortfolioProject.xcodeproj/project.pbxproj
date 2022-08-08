@@ -10,8 +10,14 @@
 		9663A5BD289D130E00E6ED8E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A5BC289D130E00E6ED8E /* Tests_iOS.swift */; };
 		9663A5BF289D130E00E6ED8E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A5BE289D130E00E6ED8E /* Tests_iOSLaunchTests.swift */; };
 		9663A5CC289D130E00E6ED8E /* PortfolioProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A5A4289D130B00E6ED8E /* PortfolioProjectApp.swift */; };
-		9663A5CE289D130E00E6ED8E /* SwiftUI_TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A5A5289D130B00E6ED8E /* SwiftUI_TemplateView.swift */; };
+		9663A5CE289D130E00E6ED8E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A5A5289D130B00E6ED8E /* NewsView.swift */; };
 		9663A5D0289D130E00E6ED8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9663A5A6289D130D00E6ED8E /* Assets.xcassets */; };
+		966BB06728A121670069ECF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BB06628A121670069ECF6 /* API.swift */; };
+		966BB06928A123190069ECF6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BB06828A123190069ECF6 /* APIService.swift */; };
+		966BB06B28A124E40069ECF6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BB06A28A124E40069ECF6 /* AppError.swift */; };
+		966BB06D28A125350069ECF6 /* APIService+News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BB06C28A125350069ECF6 /* APIService+News.swift */; };
+		966BB07028A128260069ECF6 /* NewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BB06F28A128260069ECF6 /* NewModel.swift */; };
+		966BB07328A12B370069ECF6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 966BB07228A12B370069ECF6 /* ObjectMapper */; };
 		96F66B55289D16A300345118 /* Text+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F66B54289D16A300345118 /* Text+DesignSystem.swift */; };
 		96F66B57289D170600345118 /* Button+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F66B56289D170600345118 /* Button+DesignSystem.swift */; };
 		96F66B65289D7ED900345118 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F66B64289D7ED900345118 /* SnapshotHelper.swift */; };
@@ -38,12 +44,17 @@
 
 /* Begin PBXFileReference section */
 		9663A5A4289D130B00E6ED8E /* PortfolioProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioProjectApp.swift; sourceTree = "<group>"; };
-		9663A5A5289D130B00E6ED8E /* SwiftUI_TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TemplateView.swift; sourceTree = "<group>"; };
+		9663A5A5289D130B00E6ED8E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		9663A5A6289D130D00E6ED8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9663A5AB289D130E00E6ED8E /* PortfolioProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortfolioProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9663A5B8289D130E00E6ED8E /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9663A5BC289D130E00E6ED8E /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		9663A5BE289D130E00E6ED8E /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		966BB06628A121670069ECF6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		966BB06828A123190069ECF6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		966BB06A28A124E40069ECF6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		966BB06C28A125350069ECF6 /* APIService+News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+News.swift"; sourceTree = "<group>"; };
+		966BB06F28A128260069ECF6 /* NewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
 		96F66B54289D16A300345118 /* Text+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+DesignSystem.swift"; sourceTree = "<group>"; };
 		96F66B56289D170600345118 /* Button+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+DesignSystem.swift"; sourceTree = "<group>"; };
 		96F66B64289D7ED900345118 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966BB07328A12B370069ECF6 /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +98,6 @@
 				96F66B4B289D152F00345118 /* Singletons */,
 				96F66B75289E3FCA00345118 /* Translations */,
 				96F66B52289D159B00345118 /* Extensions */,
-				9663A5A5289D130B00E6ED8E /* SwiftUI_TemplateView.swift */,
 				9663A5A6289D130D00E6ED8E /* Assets.xcassets */,
 				9663A5BB289D130E00E6ED8E /* UI Tests */,
 				96F66B6B289D7F1A00345118 /* Units Test */,
@@ -114,9 +125,19 @@
 			path = "UI Tests";
 			sourceTree = "<group>";
 		};
+		966BB06E28A127FE0069ECF6 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				9663A5A5289D130B00E6ED8E /* NewsView.swift */,
+				966BB06F28A128260069ECF6 /* NewModel.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		96F66B49289D151300345118 /* Functionnalities */ = {
 			isa = PBXGroup;
 			children = (
+				966BB06E28A127FE0069ECF6 /* News */,
 			);
 			path = Functionnalities;
 			sourceTree = "<group>";
@@ -145,6 +166,10 @@
 		96F66B4C289D153C00345118 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				966BB06628A121670069ECF6 /* API.swift */,
+				966BB06828A123190069ECF6 /* APIService.swift */,
+				966BB06A28A124E40069ECF6 /* AppError.swift */,
+				966BB06C28A125350069ECF6 /* APIService+News.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -241,6 +266,9 @@
 			dependencies = (
 			);
 			name = "PortfolioProject (iOS)";
+			packageProductDependencies = (
+				966BB07228A12B370069ECF6 /* ObjectMapper */,
+			);
 			productName = "PortfolioProject (iOS)";
 			productReference = 9663A5AB289D130E00E6ED8E /* PortfolioProject.app */;
 			productType = "com.apple.product-type.application";
@@ -314,6 +342,9 @@
 				fr,
 			);
 			mainGroup = 9663A59E289D130B00E6ED8E;
+			packageReferences = (
+				966BB07128A12B370069ECF6 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = 9663A5AC289D130E00E6ED8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,10 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9663A5CE289D130E00E6ED8E /* SwiftUI_TemplateView.swift in Sources */,
+				9663A5CE289D130E00E6ED8E /* NewsView.swift in Sources */,
 				9663A5CC289D130E00E6ED8E /* PortfolioProjectApp.swift in Sources */,
 				96F66B57289D170600345118 /* Button+DesignSystem.swift in Sources */,
+				966BB06D28A125350069ECF6 /* APIService+News.swift in Sources */,
+				966BB07028A128260069ECF6 /* NewModel.swift in Sources */,
 				96F66B55289D16A300345118 /* Text+DesignSystem.swift in Sources */,
+				966BB06928A123190069ECF6 /* APIService.swift in Sources */,
+				966BB06728A121670069ECF6 /* API.swift in Sources */,
+				966BB06B28A124E40069ECF6 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1018,25 @@
 			defaultConfigurationName = Dev;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		966BB07128A12B370069ECF6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		966BB07228A12B370069ECF6 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 966BB07128A12B370069ECF6 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9663A59F289D130B00E6ED8E /* Project object */;
 }
