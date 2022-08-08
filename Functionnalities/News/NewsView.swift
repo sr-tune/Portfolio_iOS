@@ -22,30 +22,56 @@ import SwiftUI
 
 
 
-extension NewsView {
+extension NewsListView {
   @MainActor class ViewModel: ObservableObject {
-    @Published var news: [New]?
-    @Published var JSONString: String?
+    @Published var news = [New]()
 
-    init(jsondata : Data) {
-
+    func loadNews() {
+      NewsManager.sharedInstance.retrieveAllNews { freshNews, error in
+        if let error = error {
+          print(error)
+        } else {
+          if let freshNews = freshNews {
+            self.news.append(contentsOf: freshNews)
+          }
+        }
+      }
     }
   }
 }
 
 
-struct NewsView: View {
+struct NewsListView: View {
   @StateObject var viewModel: ViewModel
 
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+
+    VStack {
+      if viewModel.news.isEmpty {
+        Text("No new available")
+        Button("refresh") {
+          if viewModel.news.isEmpty {
+            viewModel.loadNews()
+          }
+        }
+
+      } else {
+        List(viewModel.news) { new in
+          Text(new.title!)
+        }
+      }
+    }
+    .onAppear {
+      if viewModel.news.isEmpty {
+        viewModel.loadNews()
+      }
+    }
   }
 }
 
-struct NewsView_Previews: PreviewProvider {
+struct NewsListView_Previews: PreviewProvider {
   static var previews: some View {
-    NewsView(viewModel: NewsView.ViewModel.init(jsondata: Data()))
+    NewsListView(viewModel: NewsListView.ViewModel())
   }
 }
 

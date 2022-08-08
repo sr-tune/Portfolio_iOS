@@ -22,6 +22,13 @@ extension APIService {
         print("error : \(error.localizedDescription)")
         completion(nil, nil, error)
       }
+
+      if let data = data {
+        completion(data, nil, nil)
+      } else {
+        completion(nil, nil, AppError.fonctionalError(message: "Error with the data"))
+      }
+
     }
   }
 }

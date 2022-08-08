@@ -17,6 +17,7 @@ struct Constants {
 }
 
 struct New: ImmutableMappable {
+  let ident = UUID().uuidString
   let title: String?
   let desc: String?
   let urlToImage: String?
@@ -32,6 +33,14 @@ struct New: ImmutableMappable {
     urlToImage = try? map.value(Constants.urlImageKey)
     content = try? map.value(Constants.contentKey)
   }
+}
+
+extension New : Identifiable {
+  var id: String {
+    return ident
+  }
+
+
 }
 
 /*

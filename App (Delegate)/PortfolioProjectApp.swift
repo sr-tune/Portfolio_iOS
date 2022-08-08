@@ -11,7 +11,7 @@ import SwiftUI
 struct PortfolioProjectApp: App {
     var body: some Scene {
         WindowGroup {
-          NewsView(viewModel: NewsView.ViewModel(jsondata: Data()))
+          NewsListView(viewModel: NewsListView.ViewModel())
         }
     }
 }
